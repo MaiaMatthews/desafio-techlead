@@ -20,7 +20,8 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
-    depends_on: db
+    depends_on: 
+      - db
     image: desafio-api:latest
     ports:
       - 8080:8080   
@@ -32,7 +33,8 @@ services:
     build:
       context: ./front
       dockerfile: Dockerfile
-    depends_on: desafio-api
+    depends_on: 
+      - desafio-api
     image: desafio-front:latest
     ports:
       - 8000:80
