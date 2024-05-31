@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+  db:
+    container_name: desafio_db
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tldesafio
+      POSTGRES_PASSWORD: 123123
+      POSTGRES_DB: tlbiblioteca
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5434:5432
+    networks:
+      - desafio-network
+
+  desafio-api:
+    container_name: desafio-api
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    image: desafio-api:latest
+    ports:
+      - 8080:8080   
+    networks:
+      - desafio-network
+
+  desafio-front:
+    container_name: desafio-front
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    image: desafio-front:latest
+    ports:
+      - 8000:80
+  
+
+
+networks:
+    desafio-network:
+        driver: bridge

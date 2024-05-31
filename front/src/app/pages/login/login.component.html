@@ -1,0 +1,23 @@
+<div class="card-login">
+  <mat-card>
+    <form class="form">
+      <h3>Biblioteca</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input [(ngModel)]="form.nome" matInput placeholder="Usuario" [ngModelOptions]="{standalone: true}" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input [(ngModel)]="form.senha" type="password" matInput placeholder="password"
+          [ngModelOptions]="{standalone: true}" />
+      </mat-form-field>
+      <mat-form-field *ngIf="controle.cadastroMode" appearance="fill">
+        <mat-label>Confirme Senha</mat-label>
+        <input [(ngModel)]="form.confirmaSenha" type="password" matInput placeholder="password"
+          [ngModelOptions]="{standalone: true}" />
+      </mat-form-field>
+      <button color="primary" mat-raised-button (click)="btnOne()">{{controle.btnOneContent}}</button>
+      <button  mat-raised-button (click)="btnTwo()">{{controle.btnTwoContent}}</button>
+    </form>
+  </mat-card>
+</div>

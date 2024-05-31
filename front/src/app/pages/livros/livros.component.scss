@@ -1,0 +1,12 @@
+div{
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
