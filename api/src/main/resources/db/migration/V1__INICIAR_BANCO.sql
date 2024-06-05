@@ -32,11 +32,11 @@ ALTER TABLE biblioteca.livro ADD CONSTRAINT fkjbrg4ntd95dhod10dp5vihxhq FOREIGN 
 
 INSERT INTO biblioteca.usuario(id, nome, perfil_usuario, senha)VALUES(1, 'admin', 'ADMINISTRADOR', '202cb962ac59075b964b07152d234b70');
 
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(1, 'Deitel', '2024-05-30 14:46:56.161', 'Java Como programar', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(2, 'Marting Fowler', '2024-05-30 14:48:26.211', 'Arquitetura Limpa', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(3, 'Erick Evans', '2024-05-30 14:48:40.413', 'Domain Driven Design', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(5, 'Casa do código', '2024-05-30 15:02:06.553', 'Vire o Jogo com Spring Framework ', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(6, 'Casa do código', '2024-05-30 15:02:06.553', 'Aprenda a programar com Python', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(7, 'Casa do código', '2024-05-30 15:02:06.553', 'Kit robótico LEGO® EV3.', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(8, 'Casa do código', '2024-05-30 15:02:06.553', 'Kodular', 1);
-INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(9, 'Casa do código', '2024-05-30 15:02:06.553', 'Construct 2.', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(1000, 'Deitel', '2024-05-30 14:46:56.161', 'Java Como programar', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(20000, 'Marting Fowler', '2024-05-30 14:48:26.211', 'Arquitetura Limpa', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(30000, 'Erick Evans', '2024-05-30 14:48:40.413', 'Domain Driven Design', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(5000, 'Casa do código', '2024-05-30 15:02:06.553', 'Vire o Jogo com Spring Framework ', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(6000, 'Casa do código', '2024-05-30 15:02:06.553', 'Aprenda a programar com Python', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(7000, 'Casa do código', '2024-05-30 15:02:06.553', 'Kit robótico LEGO® EV3.', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(8000, 'Casa do código', '2024-05-30 15:02:06.553', 'Kodular', 1);
+INSERT INTO biblioteca.livro(id, author, created_at, nome, usuario_id)VALUES(9000, 'Casa do código', '2024-05-30 15:02:06.553', 'Construct 2.', 1);
