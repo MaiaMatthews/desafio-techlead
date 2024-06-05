@@ -14,7 +14,7 @@ docker compose up
 O Sistema ficará disponível na seguinte url:
 **https://localhost:8000**
 
-e para o acesso, será com as guintes credenciais:
+e para o acesso, será com as seguintes credenciais:
 ```
 username: admin
 senha: 123
